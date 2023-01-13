@@ -74,6 +74,7 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
+          
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
@@ -82,6 +83,7 @@ const Navbar = props => {
             Uses
           </LinkItem>
   */}
+  {/*
           <LinkItem
             target="_blank"
             href="https://github.com/craftzdog/craftzdog-homepage"
@@ -93,8 +95,9 @@ const Navbar = props => {
           >
  {/*            <IoLogoGithub />
             Source
-  */}
+  
           </LinkItem>
+          */}
         </Stack>
 
         <Box flex={1} align="right">
