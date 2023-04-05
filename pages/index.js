@@ -22,6 +22,7 @@ import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 
+
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
@@ -42,10 +43,10 @@ const Home = () => (
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Alimkhan Nurekenov
+          <Heading as="h2" variant="page-title" > 
+            Wake up Neo
           </Heading>
-          <p>Digital Craftsman ( software architect / Developer / Product Manager )</p>
+          <p>Artificial Intelegence development company</p>
         </Box>
         <Box
           flexShrink={0}
@@ -79,16 +80,9 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Alimkhan is a freelance and a full-stack developer based in Astana, i have big experience in development different types of applications and 
-          web systems, it startups.{' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          . brainstorming with TrustMe Team &quot;
-          <NextLink href="https://www.youtube.com/watch?v=8k7iXPK0hg8" passHref>
-            <Link target="_blank">Product Brain Storming</Link>
-          </NextLink>
-          &quot; successful startup case, mor 600.000$ investment.
+          Welcome to our Artificial Intelligence development company, where we specialize in creating innovative and cutting-edge products using GPT (Generative Pre-trained Transformer) technology. Our team of experts has a deep understanding of the latest advancements in AI, which allows us to deliver tailor-made solutions to meet your business needs.{' '}
+      
+          &quot; This is time of inventors.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -101,46 +95,40 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Services
         </Heading>
         <BioSection>
-          <BioYear>2001</BioYear>
-          Born in Semey, Kazakhstan.
+          <BioYear>Cross-Platform Develpoment</BioYear>
+          Flutter, Bloc, Clean-Architecture
         </BioSection>
         <BioSection>
-          <BioYear>2017</BioYear>
-          Begin work as Frontend Developer
+          <BioYear>Machine Learning</BioYear>
+          Tansor Flow , Open CV 
         </BioSection>
         <BioSection>
-          <BioYear>2018</BioYear>
-          Junior Android Developer
+          <BioYear>Open AI</BioYear>
+          ChatGPT API , Open AI Api
         </BioSection>
         <BioSection>
-          <BioYear>2019</BioYear>
-          Flutter Developer
+          <BioYear>Backend Development</BioYear>
+           Go, Python, Node-JS
         </BioSection>
         <BioSection>
-          <BioYear>2019-2021 Product Manager</BioYear>
-          Trustme.kz
+          <BioYear>Frontend Develpment</BioYear>
+          Nuxt, React, Vue 
         </BioSection>
         <BioSection>
-          <BioYear>from 2021 to 2023 work as Freelancer and IT enterpreneur</BioYear>
-          Lead mobile Development teams
+          <BioYear>Product managment</BioYear>
+          High level product management
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          partnership
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://www.youtube.com/watch?v=M5olvwg_5VU" target="_blank">
-          Playing Guitar and Piano,
-          </Link>
-          , Reading,{' '}
-         
-          ,  Machine Learning
+        We are looking for start-ups that are implementing artificial intelligence or already large companies that are already working with it for partnership and cooperation
         </Paragraph>
       </Section>
 
@@ -215,7 +203,7 @@ const Home = () => (
             Publication with me
           </GridItem>
         </SimpleGrid>
-
+{/*
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -223,6 +211,8 @@ const Home = () => (
             </Button>
           </NextLink>
         </Box>
+        */}
+       
       </Section>
     </Container>
   </Layout>

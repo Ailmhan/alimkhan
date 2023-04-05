@@ -75,9 +75,7 @@ const Navbar = props => {
             Works
           </LinkItem>
           
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
+    
           {/*
           <LinkItem href="https://uses.craftz.dog/">
             Uses

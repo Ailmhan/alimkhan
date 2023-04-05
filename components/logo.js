@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Text, useColorModeValue } from '@chakra-ui/react'
-import FootprintIcon from './icons/footprint'
+import { ArrowUpDownIcon } from '@chakra-ui/icons';
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
@@ -26,16 +26,14 @@ const Logo = () => {
     <Link href="/" scroll={false}>
       <a>
         <LogoBox>
-      <FootprintIcon /> 
-   
-
+          <ArrowUpDownIcon /> 
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
             ml={3}
           >
-            Alim Dev
+            WakeupNEO
           </Text>
         </LogoBox>
       </a>

@@ -15,38 +15,44 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="walknote">
+  <Layout title="logizi">
     <Container>
       <Title>
-        walknote <Badge>2011-2016</Badge>
+        Logizi Moving <Badge>2011-2016</Badge>
       </Title>
       <P>
-        walknote recommends new music you may like based on your music
-        preferences by recognizing your favorite songs stored in your device.
-        You can listen to recommended music just like a radio!
+      The MVP (Minimum Viable Product) of a moving application designed for USA logistic companies would be a platform that offers two distinct interfaces for drivers and dispatchers. The app's primary objective is to streamline the coordination between drivers and dispatchers for optimized logistics operations.
       </P>
       <P>
-        This service has been closed. Thank you for over 130,000 registered
-        users!
+      For Drivers:
+
+The driver interface of the MVP moving application would include a user-friendly dashboard with features such as route optimization, GPS navigation, real-time route tracking, and automated load updates. It would also allow drivers to view their schedules, receive notifications about job assignments, and communicate with dispatchers through an in-app messaging system.
+
       </P>
+      <p>
+      For Dispatchers:
+
+The dispatcher interface of the MVP moving application would include a centralized dashboard where dispatchers can manage multiple driver schedules and job assignments. This dashboard would offer features like job scheduling, load tracking, automatic notification 
+
+      </p>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
           <span>iOS</span>
         </ListItem>
         <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href="https://archive.craftz.dog/blog.odoruinu.net/2016/09/06/farewell-from-walknote/">
-            音楽発掘アプリwalknoteクローズのお知らせ{' '}
+          <Meta>Web-Site</Meta>
+          <Link href="https://logizi.kz/">
+            Web-site of platform{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Objective-C, PHP, MongoDB</span>
+          <span>Flutter, Go-lang</span>
         </ListItem>
       </List>
-
+{/*
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Media coverage</Center>
       </Heading>
@@ -85,7 +91,7 @@ const Work = () => (
           <ExternalLinkIcon mx="2px" />
         </ListItem>
       </UnorderedList>
-
+{/*
       <SimpleGrid columns={2} gap={2}>
         <WorkImage src="/images/works/walknote_01.png" alt="walknote" />
         <WorkImage src="/images/works/walknote_02.png" alt="walknote" />
@@ -93,6 +99,7 @@ const Work = () => (
       <WorkImage src="/images/works/walknote_03.png" alt="walknote" />
       <WorkImage src="/images/works/walknote_04.png" alt="walknote" />
       <WorkImage src="/images/works/walknote_05.png" alt="walknote" />
+            */}
     </Container>
   </Layout>
 )

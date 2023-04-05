@@ -4,99 +4,60 @@ import {
   Link,
   List,
   ListItem,
-  SimpleGrid,
-  UnorderedList,
-  Heading,
+
   Center,
   Image
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title,  Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
   <Layout title="amembo">
     <Container>
       <Title>
-        amembo <Badge>2005-2008</Badge>
+        TrustMe(Top 4 Central Asia Information Technology Startups) <Badge>2018-2022</Badge>
       </Title>
       <Center my={6}>
-        <Image src="/images/works/amembo_icon.png" alt="icon" />
+        <Image src="http://blog.trustme.kz/wp-content/uploads/2022/05/9a2b1da8-a5b0-4838-8064-43c83572718e.png" alt="icon" />
       </Center>
+     
       <P>
-        P2P private file sharing tool with MSN Messenger integration for Windows
+      TrustMe is a trust ecosystem , including 6 services for responsible companies and conscious people: Company - Information service about companies; People - platform for recomendations and achievements; Places - search and selection of places; Contract - online contracts via SMS; Business - business owners personal account; Coin- a bonus system for people and companies.
       </P>
       <P>
-        「MSN Messenger」と連係して特定ユーザーとP2Pフォルダ共有できる「Amembo」
+        Trust-Contracts based on Block-Chain
       </P>
-      <UnorderedList ml={4} my={4}>
-        <ListItem>ファイル転送がサイズ制限無く高速に出来ます。</ListItem>
-        <ListItem>複数のコンピュータ間で同時に通信が出来ます。</ListItem>
-        <ListItem>
-          簡単接続機能により、面倒な接続作業を自動で行います。
-        </ListItem>
-        <ListItem>
-          一つのポート開放だけで、様々な通信が出来る強力なプロトコル。
-        </ListItem>
-        <ListItem>
-          IM機能を装備しています。会話中に写真を表示したりもできます。
-        </ListItem>
-        <ListItem>
-          ファイル共有機能で、設定した公開フォルダを相手に見せることが出来ます。
-        </ListItem>
-        <ListItem>MSN/Windowsメッセンジャーからの招待で接続できます。</ListItem>
-        <ListItem>
-          画面転送機能で、相手に自分のデスクトップを見せることが出来ます。
-        </ListItem>
-      </UnorderedList>
-
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Windows 2000/XP</span>
+          <span>WEB</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Delphi</span>
+          <span>VUE/C#/Solana</span>
         </ListItem>
         <ListItem>
           <Meta>Download</Meta>
-          <Link href="http://odoruinu.net.s3.amazonaws.com/software/amembo/amembo0515123.zip">
-            v0.5.15.123
+          <Link href="https://apps.apple.com/in/app/trustme-%D1%8D%D0%BA%D0%BE%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%8F/id1590987059">
+           App-Store
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Last update</Meta>
-          <span>2008/03/23</span>
+          <Meta>Top 4 best Central Asian Startups</Meta>
+          <Link href="https://beststartup.asia/52-top-central-asia-information-technology-companies-and-startups/">
+           Best Central Asian Startup
+          </Link>
         </ListItem>
-        <ListItem>
-          <Meta>Manual</Meta>
-          <Link href="https://w.atwiki.jp/amembo/">使い方wiki</Link>
-        </ListItem>
+     
+      
       </List>
 
-      <Heading as="h4" fontSize={16} my={6}>
-        <Center>Media coverage</Center>
-      </Heading>
+     
 
-      <UnorderedList my={4}>
-        <ListItem>
-          <Link href="https://forest.watch.impress.co.jp/article/2006/01/18/amembo.html">
-            <Badge mr={2}>窓の杜</Badge>
-            「MSN
-            Messenger」と連係して特定ユーザーとP2Pフォルダ共有できる「Amembo」{' '}
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-      </UnorderedList>
+    
 
-      <SimpleGrid columns={2} gap={2}>
-        <WorkImage src="/images/works/amembo_01.gif" alt="amembo" />
-        <WorkImage src="/images/works/amembo_02.gif" alt="amembo" />
-      </SimpleGrid>
-      <WorkImage src="/images/works/amembo_03.jpg" alt="amembo" />
-      <WorkImage src="/images/works/amembo_04.jpg" alt="amembo" />
+    
     </Container>
   </Layout>
 )

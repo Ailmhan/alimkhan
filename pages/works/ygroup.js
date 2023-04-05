@@ -6,57 +6,52 @@ import {
   ListItem,
   AspectRatio
 } from '@chakra-ui/react'
-import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
+import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="STYLY">
+  <Layout title="ygroup">
     <Container>
       <Title>
-        STYLY <Badge>2017</Badge>
+         Ygroup <Badge>2022-2023</Badge>
       </Title>
       <P>
-        STYLY Studio is a creative tool for VR, allowing you to build virtual
-        spaces towards extending fashion brand&apos;s expression ability of
-        their concept. I built its web UI and backend.
+        Real-estate mobile app for agency and real-estate developers.
       </P>
-
       <List ml={4} my={4}>
         <ListItem>
+          <Meta>Website</Meta>
+          <Link href="https://ygroup.ru/">
+          https://www.ygroup.ru <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
           <Meta>Platform</Meta>
-          <span>Web</span>
+          <span>iOS/Android/Web</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, PHP</span>
+          <span>Flutter,Bloc,Clean Architecture, FLutter Web, Fire-base</span>
         </ListItem>
-        <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://styly.cc/">
-            STYLY <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
+       
       </List>
-
+{/*
+      <WorkImage src="/images/works/ygroup.png" alt="Inkdrop" />
+      <WorkImage src="/images/works/ygroup3.png" alt="Inkdrop" />
+*/}
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe
-          src="https://www.youtube.com/embed/YLdHAggLBCw"
+          src="https://www.youtube.com/embed/LJ3wLcQFv3k"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
       </AspectRatio>
-
-      <WorkImage src="/images/works/styly_eyecatch.png" alt="STYLY" />
-      <WorkImage src="/images/works/styly_01.png" alt="STYLY" />
-      <WorkImage src="/images/works/styly_02.png" alt="STYLY" />
-      <WorkImage src="/images/works/styly_03.png" alt="STYLY" />
     </Container>
   </Layout>
 )
-
 export default Work
 export { getServerSideProps } from '../../components/chakra'
