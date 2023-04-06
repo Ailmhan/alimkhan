@@ -4,14 +4,11 @@ import {
   Link,
   List,
   ListItem,
-  SimpleGrid,
-  UnorderedList,
-  Heading,
-  Center
+
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
@@ -21,7 +18,7 @@ const Work = () => (
         Logizi Moving <Badge>2011-2016</Badge>
       </Title>
       <P>
-      The MVP (Minimum Viable Product) of a moving application designed for USA logistic companies would be a platform that offers two distinct interfaces for drivers and dispatchers. The app's primary objective is to streamline the coordination between drivers and dispatchers for optimized logistics operations.
+      The MVP (Minimum Viable Product) of a moving application designed for USA logistic companies would be a platform that offers two distinct interfaces for drivers and dispatchers. The apps primary objective is to streamline the coordination between drivers and dispatchers for optimized logistics operations.
       </P>
       <P>
       For Drivers:
